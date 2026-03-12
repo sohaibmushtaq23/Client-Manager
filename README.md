@@ -1,6 +1,6 @@
 # Client Manager
 
-A full‑stack client management application with a Go backend API and a Vue 3 + Vuetify frontend.
+A full‑stack client management CRUD application with a Go backend API and a Vue 3 + Vuetify frontend.
 
 ## Features
 - Manage clients (create, read, update, delete)
