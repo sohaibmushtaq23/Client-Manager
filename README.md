@@ -44,6 +44,7 @@ Client-Manager/
 ```bash
 git clone https://github.com/sohaibmushtaq23/Client-Manager.git
 cd Client-Manager
+```
 
 ### 2. Database Setup
 Create a database (e.g., ClientDB) in your SQL Server instance.
