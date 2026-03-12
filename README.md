@@ -15,3 +15,33 @@ A full‑stack client management application with a Go backend API and a Vue 3 +
 - **Tools**: Vite, Git
 
 ## Project Structure
+Client-Manager/
+├── backend/ # Go API
+│ ├── cmd/
+│ ├── internal/
+│ ├── go.mod
+│ └── ...
+├── frontend/ # Vue application
+│ ├── src/
+│ ├── public/
+│ ├── package.json
+│ └── ...
+├── database/ # SQL scripts
+│ ├── schema.sql
+│ └── sample_data.sql
+├── .gitignore
+└── README.md
+
+## Prerequisites
+- [Go](https://golang.org/dl/) (1.21 or later)
+- [Node.js](https://nodejs.org/) (18 or later) and npm
+- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (local or remote)
+- [Git](https://git-scm.com/)
+
+## Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/sohaibmushtaq23/Client-Manager.git
+cd Client-Manager
+
