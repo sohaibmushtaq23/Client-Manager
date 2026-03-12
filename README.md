@@ -45,3 +45,21 @@ Client-Manager/
 git clone https://github.com/sohaibmushtaq23/Client-Manager.git
 cd Client-Manager
 
+### 2. Database Setup
+Create a database (e.g., ClientDB) in your SQL Server instance.
+
+Run the database/schema.sql script to create the tables.
+
+(Optional) Run database/sample_data.sql to populate with test data.
+
+### 3. Backend Configuration
+The backend reads the database connection string from .env file also provided in the backend folder. Just set the credentials
+
+### 4. Run the Backend
+```bash
+cd backend
+go mod download
+go run cmd/main.go
+
+
+
