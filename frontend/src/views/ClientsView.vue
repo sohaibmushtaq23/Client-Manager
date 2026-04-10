@@ -39,22 +39,52 @@
     </v-dialog>
 
     <!-- Add Client Dialog -->
-    <v-dialog v-model="addDialog" max-width="600">
+    <v-dialog v-model="addDialog" max-width="800">
       <v-card>
         <v-card-title>Add New Client</v-card-title>
         <v-card-text>
           <v-form ref="addFormRef" v-model="addValid">
-            <v-text-field v-model="newClient.clientCode" label="Client Code" :rules="[rules.required]" />
-            <v-text-field v-model="newClient.companyName" label="Company Name" :rules="[rules.required]" />
-            <v-text-field v-model="newClient.industry" label="Industry" />
-            <v-text-field v-model="newClient.email" label="Email" :rules="[rules.email]" />
-            <v-text-field v-model="newClient.phone" label="Phone" />
-            <v-text-field v-model="newClient.website" label="Website" />
-            <v-text-field v-model="newClient.country" label="Country" />
-            <v-text-field v-model="newClient.city" label="City" />
-            <v-text-field v-model="newClient.address" label="Address" />
-            <v-switch v-model="newClient.isActive" label="Active" />
-            <v-text-field v-model.number="newClient.creditLimit" label="Credit Limit" type="number" />
+            <v-row>
+              <v-col cols="12" md="6">
+                <v-text-field v-model="newClient.clientCode" label="Client Code" :rules="[rules.required]" />
+              </v-col>
+              <v-col cols="12" md="6">
+                <v-text-field v-model="newClient.companyName" label="Company Name" :rules="[rules.required]" />
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="12" md="6">
+                <v-text-field v-model="newClient.industry" label="Industry" />
+              </v-col>
+              <v-col cols="12" md="6">
+                <v-text-field v-model="newClient.phone" label="Phone" />
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="12" md="6">
+                <v-text-field v-model="newClient.email" label="Email" :rules="[rules.email]" />
+              </v-col>
+              <v-col cols="12" md="6">
+                <v-text-field v-model="newClient.website" label="Website" />
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="12" md="6">
+                <v-text-field v-model="newClient.country" label="Country" />
+              </v-col>
+              <v-col cols="12" md="6">
+                <v-text-field v-model="newClient.city" label="City" />
+              </v-col>
+            </v-row>
+            <v-text-area v-model="newClient.address" label="Address" />
+            <v-row>
+              <v-col cols="12" md="6">
+                <v-switch v-model="newClient.isActive" label="Active" />
+              </v-col>
+              <v-col cols="12" md="6">
+                <v-text-field v-model.number="newClient.creditLimit" label="Credit Limit" type="number" />
+              </v-col>
+            </v-row>
           </v-form>
         </v-card-text>
         <v-card-actions>
